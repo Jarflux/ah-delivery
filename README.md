@@ -11,4 +11,4 @@ Script to check the Albert Heijn Delivery for available timeslots every minute
 7. Check the console to see the free timeslote date and hour
 8. Refresh the page and select the free timeslot
 
-![Script in action](/screenshot.png)
+![Script in action](/Screenshot.png)
