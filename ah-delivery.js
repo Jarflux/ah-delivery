@@ -9,7 +9,6 @@ window.intervalID = setInterval( function(){
                if(timeslot.state!="full"){
                    allFull = false;
                    console.log("%cAvailable slot found ->  %s at %s", "color: #228B22",  deliverydate.date, timeslot.from);
-                   console.log(timeslot.state)
                    audio.play();
                }
            })
