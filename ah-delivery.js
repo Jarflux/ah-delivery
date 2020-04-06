@@ -2,7 +2,7 @@ console.log("Checking Available AH Delivery Timeslots");
 var audio = new Audio("https://soundbible.com/mp3/Slow_HeartBeat-Mike_Koenig-1853475164.mp3");
 window.intervalID = setInterval( function(){
     var allFull = true;
-    $.getJSON('https://www.ah.be/service/rest/delegate?url=%2Fkies-moment%2Fophalen', function(data) {
+    $.getJSON('https://www.ah.be/service/rest/delegate?url=%2Fkies-moment%2Fophalen%2F3224&_=1586081256141', function(data) {
        var deliveryDates = data._embedded.lanes[3]._embedded.items[0]._embedded.deliveryDates;
        deliveryDates.forEach( function(deliverydate){
            deliverydate.deliveryTimeSlots.forEach(function(timeslot){
