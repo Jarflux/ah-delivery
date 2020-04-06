@@ -18,4 +18,4 @@ window.intervalID = setInterval( function(){
         console.log("%cAll timeslots full", "color: #D3D3D3");
     }
 }, 60000);
-console.log("To stop execute: clearInterval(window.intervalID)")
+console.log("To stop execute: clearInterval(" + window.intervalID + ")")
