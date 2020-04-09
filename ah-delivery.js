@@ -13,9 +13,9 @@ window.intervalID = setInterval( function(){
                }
            })
        })
+       if(allFull){
+           console.log("%cAll timeslots full", "color: #D3D3D3");
+       }
     });
-    if(allFull){
-        console.log("%cAll timeslots full", "color: #D3D3D3");
-    }
 }, 60000);
 console.log("To stop execute: clearInterval(" + window.intervalID + ")")
