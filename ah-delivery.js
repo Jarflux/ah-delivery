@@ -6,7 +6,7 @@ window.intervalID = setInterval( function(){
        var deliveryDates = data._embedded.lanes[3]._embedded.items[0]._embedded.deliveryDates;
        deliveryDates.forEach( function(deliverydate){
            deliverydate.deliveryTimeSlots.forEach(function(timeslot){
-               if(timeslot.state!="full"){
+               if(timeslot.state=="selectable"){
                    allFull = false;
                    console.log("%cAvailable slot found ->  %s at %s", "color: #228B22",  deliverydate.date, timeslot.from);
                    audio.play();
