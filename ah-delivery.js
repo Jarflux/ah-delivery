@@ -1,4 +1,4 @@
-var apiUrl = 'https://www.ah.be/service/rest/delegate?url=%2Fkies-moment%2Fophalen%2F3224&_=1587583456543'; 
+var apiUrl = 'https://www.ah.be/service/rest/delegate?url=%2Fkies-moment%2Fophalen%2F3224&_=' + Date.now(); 
 var afterDate = new Date('2020-04-24');
 var beforeDate = new Date('2020-04-29');
 console.log("Checking Available AH Delivery Timeslots");
